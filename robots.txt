@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Google / Gemini (Google-Extended controls Gemini & Vertex AI training;
+# standard Google Search/AI Overviews already use Googlebot, allowed above)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Common Crawl (feeds many open-source and third-party models)
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://www.vinedoslosrosales.com.mx/sitemap.xml
