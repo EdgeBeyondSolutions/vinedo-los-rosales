@@ -21,9 +21,44 @@
     });
   }
 
-  function initContactForm() {
-    const form = $("[data-contact-form]");
+  function initMultistepForm() {
+    const form = $("[data-multistep-form]");
     if (!form) return;
+    const steps = $$(".ms-step", form);
+    const dots = $$(".ms-progress-dot", form);
+    const optionsWrap = $(".ms-options", form);
+    let interes = "";
+
+    function goTo(n) {
+      steps.forEach(s => s.classList.toggle("is-active", Number(s.dataset.step) === n));
+      dots.forEach(d => {
+        const i = Number(d.dataset.dot);
+        d.classList.toggle("is-active", i === n);
+        d.classList.toggle("is-done", i < n);
+      });
+    }
+
+    if (optionsWrap) {
+      $$(".ms-option", optionsWrap).forEach(btn => {
+        btn.addEventListener("click", () => {
+          $$(".ms-option", optionsWrap).forEach(b => b.classList.remove("is-selected"));
+          btn.classList.add("is-selected");
+          interes = btn.getAttribute("data-value") || "";
+          setTimeout(() => goTo(2), 220);
+        });
+      });
+    }
+
+    $$("[data-ms-back]", form).forEach(btn => btn.addEventListener("click", () => {
+      const current = Number(btn.closest(".ms-step").dataset.step);
+      goTo(Math.max(1, current - 1));
+    }));
+
+    $$("[data-ms-next]", form).forEach(btn => btn.addEventListener("click", () => {
+      const current = Number(btn.closest(".ms-step").dataset.step);
+      goTo(current + 1);
+    }));
+
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!form.reportValidity()) return;
@@ -33,6 +68,7 @@
       const mensaje = $("#c-mensaje", form)?.value.trim() || "";
       const lines = [
         "Hola, me gustaría reservar una visita a Viñedos Los Rosales.",
+        interes ? `Interés: ${interes}` : "",
         nombre ? `Nombre: ${nombre}` : "",
         fecha ? `Fecha tentativa: ${fecha}` : "",
         personas ? `Número de personas: ${personas}` : "",
@@ -40,6 +76,10 @@
       ].filter(Boolean).join("\n");
       window.open(waLink(lines), "_blank", "noopener");
     });
+  }
+
+  function initFooterYear() {
+    $$("[data-year]").forEach(el => { el.textContent = String(new Date().getFullYear()); });
   }
 
   function initNav() {
@@ -108,7 +148,8 @@
 
   function boot() {
     safe(initWhatsappLinks, "initWhatsappLinks");
-    safe(initContactForm, "initContactForm");
+    safe(initMultistepForm, "initMultistepForm");
+    safe(initFooterYear, "initFooterYear");
     safe(initNav, "initNav");
     safe(initAnchorScroll, "initAnchorScroll");
     safe(initReveals, "initReveals");

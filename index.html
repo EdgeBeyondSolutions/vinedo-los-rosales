@@ -7,6 +7,7 @@
 <meta name="description" content="Viñedos Los Rosales: viñedo familiar en Tequisquiapan, Querétaro, con más de 40 años cultivando vid. Recorridos, catas, bodas y la Vendimia anual. Ruta del Queso y Vino." />
 
 <link rel="canonical" href="https://www.vinedoslosrosales.com.mx/" />
+<link rel="icon" href="img/logo.jpg" type="image/jpeg" />
 
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="es_MX" />
@@ -14,10 +15,12 @@
 <meta property="og:title" content="Viñedos Los Rosales · Tequisquiapan, Querétaro" />
 <meta property="og:description" content="Viñedo familiar con más de 40 años de tradición en el corazón de la Ruta del Queso y Vino de Querétaro." />
 <meta property="og:url" content="https://www.vinedoslosrosales.com.mx/" />
+<meta property="og:image" content="https://www.vinedoslosrosales.com.mx/img/hero-vino-vinedo.jpg" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Viñedos Los Rosales · Tequisquiapan, Querétaro" />
 <meta name="twitter:description" content="Viñedo familiar con más de 40 años de tradición en el corazón de la Ruta del Queso y Vino de Querétaro." />
+<meta name="twitter:image" content="https://www.vinedoslosrosales.com.mx/img/hero-vino-vinedo.jpg" />
 
 <!-- Google Search Console: pega aquí el código real cuando lo generen -->
 <meta name="google-site-verification" content="PEGA-AQUI-TU-CODIGO-DE-SEARCH-CONSOLE" />
@@ -38,6 +41,8 @@
   "name": "Viñedos Los Rosales",
   "description": "Viñedo familiar en Tequisquiapan, Querétaro, con más de 40 años cultivando vid y producción propia de vino desde 2011. Parte de la Ruta del Queso y Vino de Querétaro.",
   "url": "https://www.vinedoslosrosales.com.mx/",
+  "logo": "https://www.vinedoslosrosales.com.mx/img/logo.jpg",
+  "image": "https://www.vinedoslosrosales.com.mx/img/hero-vino-vinedo.jpg",
   "telephone": "+524142804939",
   "address": {
     "@type": "PostalAddress",
@@ -48,29 +53,38 @@
     "addressCountry": "MX"
   },
   "areaServed": "Tequisquiapan, Querétaro",
+  "sameAs": [
+    "https://www.facebook.com/VinedosLosRosalesTx",
+    "https://www.instagram.com/vinedoslosrosalestx/"
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.4",
-    "reviewCount": "910"
+    "reviewCount": "938"
   }
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=demo1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css?v=demo2">
 </head>
 <body>
 <a href="#main" class="skip-link">Saltar al contenido</a>
 
 <header class="nav">
   <div class="container nav-inner">
-    <a href="#top" class="nav-brand">Viñedos <em>Los Rosales</em></a>
+    <a href="#top" class="nav-brand">
+      <img class="nav-logo" src="img/logo.jpg" alt="Viñedos Los Rosales" width="40" height="40" />
+      <span>Los Rosales</span>
+    </a>
     <nav class="nav-links" aria-label="Navegación principal">
       <a href="#vinos">Vinos</a>
       <a href="#experiencias">Experiencias</a>
-      <a href="#vendimia">Vendimia 2026</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#vendimia">Vendimia</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <a class="btn btn-primary nav-cta" data-wa-link="Hola, me gustaría más información sobre Viñedos Los Rosales.">Reservar por WhatsApp</a>
@@ -82,7 +96,7 @@
 
 <div class="mobile-menu">
   <div class="mobile-menu-top container">
-    <span class="nav-brand">Los Rosales</span>
+    <span class="nav-brand"><img class="nav-logo" src="img/logo.jpg" alt="" width="34" height="34" />Los Rosales</span>
     <button class="nav-toggle" aria-label="Cerrar menú">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
@@ -90,7 +104,9 @@
   <div class="mobile-menu-links container">
     <a href="#vinos">Vinos</a>
     <a href="#experiencias">Experiencias</a>
-    <a href="#vendimia">Vendimia 2026</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#vendimia">Vendimia</a>
     <a href="#contacto">Contacto</a>
   </div>
   <div class="mobile-menu-cta container">
@@ -101,19 +117,22 @@
 <main id="main">
 
   <section class="hero" id="top">
-    <div class="hero-texture" aria-hidden="true"></div>
+    <div class="hero-media" aria-hidden="true">
+      <img src="img/hero-vino-vinedo.jpg" alt="" />
+      <div class="hero-scrim"></div>
+    </div>
     <div class="container hero-inner">
-      <p class="eyebrow reveal">Ruta del Queso y Vino · Tequisquiapan, Querétaro</p>
+      <p class="eyebrow eyebrow-light reveal">Ruta del Queso y Vino · Tequisquiapan, Querétaro</p>
       <h1 class="hero-title reveal reveal-delay-1">Más de 40 años cultivando vides en el corazón de <em>Tequisquiapan</em>.</h1>
       <p class="lede hero-sub reveal reveal-delay-2">Un viñedo familiar donde la tradición se convierte en vino: recorridos guiados, catas, un jardín para bodas y eventos, y la Vendimia — nuestra celebración anual de la cosecha.</p>
       <div class="hero-actions reveal reveal-delay-3">
         <a class="btn btn-primary" data-wa-link="Hola, me gustaría reservar una visita a Viñedos Los Rosales.">Reservar por WhatsApp</a>
-        <a class="btn btn-ghost" href="#vendimia">Ver Vendimia 2026</a>
+        <a class="btn btn-ghost btn-ghost-light" href="#vendimia">Ver Vendimia</a>
       </div>
       <div class="badges reveal reveal-delay-3">
-        <span class="badge"><span class="dot"></span>4.4★ en Google (910 reseñas)</span>
-        <span class="badge"><span class="dot"></span>A 10 min de Tequisquiapan</span>
-        <span class="badge"><span class="dot"></span>Viñedo familiar desde hace 40+ años</span>
+        <span class="badge badge-light"><span class="dot"></span>4.4★ en Google (938 reseñas)</span>
+        <span class="badge badge-light"><span class="dot"></span>A 10 min de Tequisquiapan</span>
+        <span class="badge badge-light"><span class="dot"></span>Viñedo familiar desde hace 40+ años</span>
       </div>
     </div>
   </section>
@@ -137,7 +156,9 @@
 
   <section class="historia">
     <div class="container historia-grid">
-      <div class="historia-num reveal">01</div>
+      <div class="historia-media reveal">
+        <img src="img/evento-jardin.jpg" alt="Visitantes conviviendo en el jardín de Viñedos Los Rosales" loading="lazy" />
+      </div>
       <div class="historia-body">
         <p class="eyebrow reveal">Nuestra historia</p>
         <h2 class="reveal">Pasión y herencia familiar</h2>
@@ -176,6 +197,29 @@
           <p>Redondo y frutal, uno de los favoritos en nuestras catas guiadas.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Momentos en Los Rosales</p>
+        <h2 class="reveal">Así se vive una tarde entre vides</h2>
+      </div>
+    </div>
+    <div class="galeria-grid">
+      <figure class="galeria-item galeria-item-tall reveal">
+        <img src="img/hero-vino-vinedo.jpg" alt="Copa de vino tinto sostenida entre las vides al atardecer" loading="lazy" />
+      </figure>
+      <figure class="galeria-item reveal reveal-delay-1">
+        <img src="img/pisado-uvas.jpg" alt="Visitante pisando uvas durante la Vendimia de Los Rosales" loading="lazy" />
+      </figure>
+      <figure class="galeria-item reveal reveal-delay-2">
+        <img src="img/evento-jardin.jpg" alt="Grupo de amigos disfrutando el jardín de Viñedos Los Rosales" loading="lazy" />
+      </figure>
+      <figure class="galeria-item galeria-item-tall reveal reveal-delay-3">
+        <img src="img/ceremonia-vendimia.jpg" alt="Ceremonia tradicional de bendición de la uva en la Vendimia" loading="lazy" />
+      </figure>
     </div>
   </section>
 
@@ -218,27 +262,87 @@
     </div>
   </div>
 
+  <section class="nosotros" id="nosotros">
+    <div class="container nosotros-grid">
+      <div class="nosotros-media reveal">
+        <img src="img/pisado-uvas.jpg" alt="Visitante viviendo la experiencia del pisado de uvas en Los Rosales" loading="lazy" />
+      </div>
+      <div class="nosotros-body">
+        <p class="eyebrow reveal">Quiénes cuidan cada copa</p>
+        <h2 class="reveal">Un viñedo que se trabaja en familia, cosecha tras cosecha</h2>
+        <p class="reveal reveal-delay-1">Detrás de cada botella hay cuatro décadas de la misma familia caminando entre las mismas hileras de vid. No somos una operación industrial: somos quienes podamos las plantas, quienes reciben a los grupos los fines de semana y quienes sirven la copa en la Vendimia.</p>
+        <p class="reveal reveal-delay-2">Esa cercanía es la que notan quienes nos visitan — el trato directo, las dudas resueltas por alguien que de verdad conoce el viñedo, y un ritmo de trabajo artesanal que preferimos mantener en pequeños lotes antes que crecer sin cuidado.</p>
+        <ul class="nosotros-list reveal reveal-delay-3">
+          <li><strong>+40 años</strong> cultivando en la misma tierra</li>
+          <li><strong>Desde 2011</strong> produciendo vino propio</li>
+          <li><strong>Atención directa</strong> en cada recorrido y cata</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="opiniones" id="opiniones">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Lo que dicen quienes nos visitan</p>
+        <h2 class="reveal">4.4★ en Google, con 938 opiniones</h2>
+        <p class="lede reveal reveal-delay-1">Reseñas reales de Google Maps, sin edición.</p>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi-card reveal">
+          <div class="testi-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <blockquote>“Un lugar muy romántico, te venden la tabla de quesos y el vino acorde a tu gusto, hay música en vivo a cierta hora y te pasan a la degustación así como al recorrido por la fábrica.”</blockquote>
+          <figcaption>Paola Sánchez Montiel <span>· Local Guide, Google Maps</span></figcaption>
+        </figure>
+        <figure class="testi-card reveal reveal-delay-1">
+          <div class="testi-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <blockquote>“Excelente recorrido, todas mis dudas respondidas, muy ricos los vinos. Vinimos en la temporada del festival del arte, vino y queso y tuvimos un trato muy bueno.”</blockquote>
+          <figcaption>Ruby Domínguez <span>· Local Guide, Google Maps</span></figcaption>
+        </figure>
+        <figure class="testi-card reveal reveal-delay-2">
+          <div class="testi-stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+          <blockquote>“Es muy bonito lugar, amplio y con poca gente. Cuenta con una explanada súper bonita para pasar la tarde.”</blockquote>
+          <figcaption>Nelly J. R. <span>· Local Guide, Google Maps</span></figcaption>
+        </figure>
+      </div>
+      <div class="opiniones-social reveal reveal-delay-3">
+        <span>Síguenos y mira más momentos reales:</span>
+        <div class="social-links">
+          <a href="https://www.facebook.com/VinedosLosRosalesTx" target="_blank" rel="noopener" aria-label="Facebook de Viñedos Los Rosales">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14C17.17 2.1 15.95 2 14.66 2 11.98 2 10 3.66 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/vinedoslosrosalestx/" target="_blank" rel="noopener" aria-label="Instagram de Viñedos Los Rosales">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="vendimia" id="vendimia">
     <div class="container">
       <div class="vendimia-card reveal">
-        <p class="eyebrow vendimia-eyebrow">Evento en puerta</p>
-        <h3>Vendimia Los Rosales 2026 — 13ª edición</h3>
-        <p>Sábado 25 de julio, de 12:00 a 22:00 h. Pisado de uvas, copa conmemorativa, música en vivo con La Sonora Santanera, y experiencias sensoriales entre las vides. $1,300 pesos por persona.</p>
-        <div class="vendimia-facts">
-          <div>
-            <div class="vendimia-fact-num">13ª</div>
-            <div class="vendimia-fact-label">edición de la Vendimia</div>
+        <div class="vendimia-media" aria-hidden="true"><img src="img/ceremonia-vendimia.jpg" alt="" loading="lazy" /></div>
+        <div class="vendimia-content">
+          <p class="eyebrow vendimia-eyebrow">Nuestra fiesta de cosecha</p>
+          <h3>Vendimia Los Rosales — 13ª edición ya celebrada</h3>
+          <p>Este año vivimos otra tarde inolvidable: pisado de uvas, copa conmemorativa, música en vivo y experiencias sensoriales entre las vides. Los cupos de cada edición son limitados y se agotan rápido.</p>
+          <div class="vendimia-facts">
+            <div>
+              <div class="vendimia-fact-num">13ª</div>
+              <div class="vendimia-fact-label">edición celebrada de la Vendimia</div>
+            </div>
+            <div>
+              <div class="vendimia-fact-num">1×año</div>
+              <div class="vendimia-fact-label">una sola fecha, cupo limitado</div>
+            </div>
+            <div>
+              <div class="vendimia-fact-num">14ª</div>
+              <div class="vendimia-fact-label">edición: acceso anticipado por WhatsApp</div>
+            </div>
           </div>
-          <div>
-            <div class="vendimia-fact-num">$1,300</div>
-            <div class="vendimia-fact-label">pesos por persona</div>
-          </div>
-          <div>
-            <div class="vendimia-fact-num">12–22h</div>
-            <div class="vendimia-fact-label">horario del evento</div>
-          </div>
+          <a class="btn btn-primary" data-wa-link="Hola, quiero que me avisen primero cuando abran boletos para la próxima Vendimia de Los Rosales.">Quiero acceso anticipado a la próxima Vendimia</a>
         </div>
-        <a class="btn btn-primary" data-wa-link="Hola, quiero reservar mi lugar para la Vendimia Los Rosales 2026.">Reservar mi lugar</a>
       </div>
     </div>
   </section>
@@ -265,34 +369,64 @@
       <div class="cta-copy">
         <p class="eyebrow reveal">Reserva tu visita</p>
         <h2 class="reveal">Cuéntanos cuándo quieres venir</h2>
-        <p class="reveal reveal-delay-1">Escríbenos por WhatsApp o llena el formulario — te contestamos directo para armar tu visita, cata o evento en Los Rosales.</p>
+        <p class="reveal reveal-delay-1">Responde tres preguntas rápidas y te contactamos por WhatsApp para armar tu recorrido, cata o evento en Los Rosales.</p>
         <div class="badges">
           <span class="badge"><span class="dot"></span>WhatsApp: 414 280 4939</span>
           <span class="badge"><span class="dot"></span>Km 27, Carr. Tequisquiapan–Ezequiel Montes</span>
         </div>
       </div>
 
-      <form class="cta-form reveal reveal-delay-2" data-contact-form novalidate>
-        <div class="cta-form-row">
+      <form class="cta-form multistep-form reveal reveal-delay-2" data-multistep-form novalidate>
+
+        <div class="ms-progress" aria-hidden="true">
+          <span class="ms-progress-dot is-active" data-dot="1"></span>
+          <span class="ms-progress-dot" data-dot="2"></span>
+          <span class="ms-progress-dot" data-dot="3"></span>
+        </div>
+
+        <div class="ms-step is-active" data-step="1">
+          <p class="ms-step-title">¿Qué te gustaría vivir en Los Rosales?</p>
+          <div class="ms-options" data-field="interes">
+            <button type="button" class="ms-option" data-value="Recorrido guiado">Recorrido guiado</button>
+            <button type="button" class="ms-option" data-value="Cata de vinos">Cata de vinos</button>
+            <button type="button" class="ms-option" data-value="Boda o evento privado">Boda o evento privado</button>
+            <button type="button" class="ms-option" data-value="Próxima Vendimia">Próxima Vendimia</button>
+          </div>
+        </div>
+
+        <div class="ms-step" data-step="2">
+          <p class="ms-step-title">¿Para cuándo y cuántas personas?</p>
           <div class="field">
-            <label for="c-nombre">Nombre</label>
-            <input id="c-nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+            <label for="c-fecha">Fecha tentativa</label>
+            <input id="c-fecha" name="fecha" type="text" placeholder="Ej. sábado 12 de septiembre" />
           </div>
           <div class="field">
             <label for="c-personas">Número de personas</label>
             <input id="c-personas" name="personas" type="text" placeholder="Ej. 4" />
           </div>
+          <div class="ms-nav">
+            <button type="button" class="btn btn-ghost" data-ms-back>Atrás</button>
+            <button type="button" class="btn btn-primary" data-ms-next>Continuar</button>
+          </div>
         </div>
-        <div class="field">
-          <label for="c-fecha">Fecha tentativa</label>
-          <input id="c-fecha" name="fecha" type="text" placeholder="Ej. sábado 15 de agosto" />
+
+        <div class="ms-step" data-step="3">
+          <p class="ms-step-title">¿Cómo te contactamos?</p>
+          <div class="field">
+            <label for="c-nombre">Nombre</label>
+            <input id="c-nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+          </div>
+          <div class="field">
+            <label for="c-mensaje">Algo más que debamos saber (opcional)</label>
+            <textarea id="c-mensaje" name="mensaje" placeholder="Alergias, ocasión especial, hora ideal..."></textarea>
+          </div>
+          <div class="ms-nav">
+            <button type="button" class="btn btn-ghost" data-ms-back>Atrás</button>
+            <button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
+          </div>
+          <p class="cta-note">Al enviar se abrirá WhatsApp con tu mensaje listo para mandar. No compartimos tus datos con nadie más — consulta nuestro <a href="privacidad.html">Aviso de Privacidad</a>.</p>
         </div>
-        <div class="field">
-          <label for="c-mensaje">Mensaje</label>
-          <textarea id="c-mensaje" name="mensaje" placeholder="Recorrido, cata, boda, evento..."></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
-        <p class="cta-note">Al enviar se abrirá WhatsApp con tu mensaje listo para mandar.</p>
+
       </form>
     </div>
   </section>
@@ -300,12 +434,36 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer-inner">
-    <span class="footer-brand">Viñedos Los Rosales</span>
-    <div class="footer-meta">
-      <span>Tequisquiapan, Querétaro, México</span>
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a href="#top" class="footer-brand"><img class="nav-logo" src="img/logo.jpg" alt="" width="36" height="36" />Viñedos Los Rosales</a>
+      <p>Viñedo familiar en Tequisquiapan, Querétaro, cultivando vid desde hace más de 40 años y produciendo vino propio desde 2011. Parte de la Ruta del Queso y Vino.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/VinedosLosRosalesTx" target="_blank" rel="noopener" aria-label="Facebook de Viñedos Los Rosales">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14C17.17 2.1 15.95 2 14.66 2 11.98 2 10 3.66 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/vinedoslosrosalestx/" target="_blank" rel="noopener" aria-label="Instagram de Viñedos Los Rosales">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="Enlaces del sitio">
+      <span class="footer-col-title">Explora</span>
+      <a href="#vinos">Vinos</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#vendimia">Vendimia</a>
+    </nav>
+    <div class="footer-contact">
+      <span class="footer-col-title">Visítanos</span>
+      <span>Carretera Tequisquiapan–Ezequiel Montes Km 27, El Sauz, 76796 Tequisquiapan, Qro.</span>
       <a data-wa-link="Hola, me gustaría más información sobre Viñedos Los Rosales.">WhatsApp: 414 280 4939</a>
     </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> Viñedos Los Rosales. Todos los derechos reservados.</span>
+    <a href="privacidad.html">Aviso de Privacidad</a>
   </div>
 </footer>
 
@@ -315,6 +473,6 @@
 
 <script defer src="lib/gsap.min.js"></script>
 <script defer src="lib/ScrollTrigger.min.js"></script>
-<script defer src="main.js?v=demo1"></script>
+<script defer src="main.js?v=demo2"></script>
 </body>
 </html>
